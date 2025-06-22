@@ -1,0 +1,71 @@
+/* Style the slider container */
+.contact-slider {
+    display: flex;
+    
+    scroll-snap-type: x mandatory; /* Enable snapping to slides */
+    width: 80%;
+    height: 250px; /* Adjust width as needed */
+    margin: 0 auto;
+    margin-left: 50px;
+    padding: 20px;
+  }
+  
+  /* Style the individual slides */
+  .contact-item {
+    scroll-snap-align: start; /* Align slides to the left edge */
+    border-right: 1px solid green;
+    padding: 10px;
+    background-color: #f5f5f5;
+    width: 300px; /* Adjust width as needed */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .contact-item i{
+    margin-bottom: 30px;
+  }
+  
+  #first{
+    border-radius: 10px 0px 0px 10px;
+  }
+  #last{
+    border-right: none;
+    border-radius: 0px 10px 10px 0px;
+  }
+  
+  .contact-item .contact-info {
+    text-align: center;
+  }
+  
+  .contact-item .contact-info h3 {
+    margin: 0;
+    font-size: 18px;
+  }
+  
+  .contact-item .contact-info p {
+    font-weight: bold;
+    margin-top: 5px;
+  }
+  
+  
+  /* Optional styles for scrollbar (customize as needed) */
+  .contact-slider::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+  
+  .contact-slider::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+  }
+  
+  .contact-slider::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
+  }
+  
+  .contact-slider::-webkit-scrollbar-thumb:hover {
+    background: #666;
+  }

@@ -1,0 +1,139 @@
+footer{
+    padding:20px 0px 0px 0px;
+
+}
+.footer-container {
+    background-color: #333;
+    padding-top: 50px;
+    width:100%;
+    height:60%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+    color: #ffffff;
+    border-radius: none;
+}
+
+.footer-block{
+    width: 33.3%;
+    padding: 30px;
+}
+.footer-heading {
+    margin-bottom: 10px; 
+    margin-right: 20px;
+    text-align: center;
+}
+
+.footer-list {
+    list-style-type: none;
+    
+    padding: 0; 
+}
+
+.footer-list li {
+    padding: 5px 0; 
+    text-align: center;
+}
+
+.footer-list a {
+    color: #ccc; 
+    text-decoration: none; 
+    transition: color 0.3s; 
+    
+}
+
+.footer-list a:hover {
+    color: #fff; 
+
+}
+.copyright{
+    color: #fff;
+    background-color: #614d06;
+    text-align: center;
+}
+*{
+    font-family: "Poppins", sans-serif;
+}
+.About-hero {
+    height: 50vh; 
+    background-image: url(811081a407415ba4036e1bad08475d49.jpg); 
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+}
+
+.About-hero::before {
+    content: ""; 
+    position: absolute; 
+    top: 1;
+    left: 0;
+    width: 100%; 
+    height: 50%;
+    background-color: rgba(0, 0, 0, 0.4); 
+}
+
+
+.About-hero h1 {
+    position: relative;
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+
+.About-hero p {
+    position: relative;
+    font-size: 24px;
+    margin-bottom: 40px;
+}
+
+.hero2{
+    display: flex;
+    flex-direction: row;
+}
+.hero2-a{
+    width: 50%;
+    padding: 20px;
+    justify-content:left;
+    min-height: 250px;     
+    margin: 20px auto;     
+    padding: 20px;         
+    overflow: auto;        
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+
+}
+.hero2-a h1,p{
+    text-align: justify;
+    padding: 10px;
+
+}
+.hero2-a h1{
+    color: #2b2929;
+
+}
+.hero2-b{
+    justify-content:right;
+    width: 50%;            
+    min-height: 200px;     
+    margin: 20px auto;     
+    padding:40px;         
+    overflow: auto;        
+    box-sizing: border-box; 
+}
+.hero2-b img{
+    position: relative;
+    left: 30%;
+}
+
+iframe{
+    margin-left: 25%;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); 
+}

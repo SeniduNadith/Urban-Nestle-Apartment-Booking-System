@@ -1,0 +1,129 @@
+
+.contact-slider {
+    display: flex;
+    scroll-snap-type: x mandatory; 
+    width: 80%;
+    height: 250px; 
+    margin: 0 auto;
+    margin-left: 50px;
+    padding: 20px;
+    
+  }
+  
+ 
+  .contact-item {
+    scroll-snap-align: start; 
+    border-right: 1px solid rgb(88, 7, 7);
+    padding: 10px;
+    background-color: #f5f5f5;
+    min-width: 290px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); 
+  }
+  .contact-item i{
+    margin-bottom: 30px;
+  }
+  
+  #first{
+    border-radius: 10px 0px 0px 10px;
+  }
+  #last{
+    border-right: none;
+    border-radius: 0px 10px 10px 0px;
+  }
+  
+  .contact-item .contact-info {
+    text-align: center;
+  }
+  
+  .contact-item .contact-info h3 {
+    margin: 0;
+    font-size: 18px;
+  }
+  
+  .contact-item .contact-info p {
+    font-weight: bold;
+    margin-top: 5px;
+  }
+  
+  
+
+  .contact-slider::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+  
+  .contact-slider::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+  }
+  
+  .contact-slider::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
+  }
+  
+  .contact-slider::-webkit-scrollbar-thumb:hover {
+    background: #666;
+  }
+  .faq{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin-left: 23%;
+    margin-right: 70%;
+    margin-top: 10px;
+    background-color: #ffcf63;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px lightblue;
+    padding: 30px;
+  }
+  .faqaq img{
+    width: 50%;
+    position: relative;
+    left: 50%;
+    top: 100%;
+  }
+  .btn1 {
+display: inline-block;
+font-weight: 400;
+color: #ffffff; 
+text-align: center;
+vertical-align: middle;
+user-select: none;
+background-color: transparent;
+border: 1px solid transparent;
+padding: 6px 12px;
+font-size: 16px;
+line-height: 24px; 
+border-radius: 4px; 
+transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+cursor: pointer;
+outline: none; 
+}
+
+.btn-primary {
+background-color: #007bff; 
+border-color: #007bff; 
+}
+
+.btn-primary:hover {
+background-color: #0069d9; 
+border-color: #0062cc; 
+}
+
+.btn-primary:focus {
+box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.5); 
+}
+
+.form-text{
+padding:5px 10px 10px 15px;
+border-radius: 10px;
+border: none;
+
+}

@@ -1,0 +1,19 @@
+.grid {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 20px; 
+    margin: 20px;
+    padding: 0;
+}
+
+.grid-item {
+    background: #ccc7c7;
+    border: 1px solid #ddd; 
+    padding: 15px; 
+    width: 50%;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); 
+}
+
+.grid-item h2, .grid-item p {
+    margin: 10px 0;
+}

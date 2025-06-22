@@ -1,0 +1,42 @@
+.form-wrapper {
+    max-width: 600px; 
+    margin: 20px auto; 
+    padding: 20px;
+    background: #cabfbf;
+    border-radius: 8px; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+}
+
+.form-wrapper .admin-contact-form {
+    display: flex;
+    flex-direction: column; 
+}
+
+.input-field {
+    margin-bottom: 15px; 
+}
+
+.input-field label {
+    display: block; 
+    margin-bottom: 5px;
+    color: #333; 
+    font-size: 16px;
+}
+
+.input-field input[type="text"],
+.input-field input[type="password"] {
+    width: 100%; 
+    padding: 10px; 
+    border: 1px solid #ccc; 
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.btn-submit {
+    background-color: #0b2847; 
+    color: white; 
+    border: none;
+    padding: 10px 20px; 
+    border-radius: 5px;
+    font-size: 16px;
+}

@@ -1,0 +1,243 @@
+.About-hero {
+    height: 50vh;
+    background-image: url(images/811081a407415ba4036e1bad08475d49.jpg); 
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+}
+.About-hero::before {
+    content: ""; 
+    position: absolute; 
+    top: 1;
+    left: 0;
+    width: 100%; 
+    height: 50%;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+
+.About-hero h1 {
+    position: relative;
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+
+.About-hero p {
+    position: relative;
+    font-size: 24px;
+    margin-bottom: 40px;
+}
+
+.hero2{
+    display: flex;
+    flex-direction: row;
+}
+.hero2-a{
+    width: 50%;
+    padding: 20px;
+    justify-content:left;
+    min-height: 250px;
+    margin: 20px auto;     
+    padding: 20px;         
+    overflow: auto;        
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+
+}
+.hero2-a h1,p{
+    text-align: justify;
+    padding: 10px;
+
+}
+.hero2-a h1{
+    color: #2b2929;
+
+}
+.hero2-b{
+    justify-content:right;
+    width: 50%;            
+    min-height: 200px;     
+    margin: 20px auto;     
+    padding:40px;        
+
+    
+    overflow: auto;       
+    box-sizing: border-box;
+}
+.hero2-b img{
+    position: relative;
+    left: 30%;
+}
+
+iframe{
+    margin-left: 25%;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); 
+}
+.map{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 30px 0px;
+
+  }
+  .map p{
+    justify-content:flex-end;
+    padding: 20px;
+    border-radius: 10px;
+    margin-left: 200px;
+    position: relative;
+    top: 20%;
+    background-color: #f5f5f5;
+    font-size: 24px; 
+    font-weight: bold; 
+    color: #333; 
+  }
+  iframe{
+    position: relative;
+    min-width: 40%;
+    right: 20%;
+  }
+
+  .slideshow-container1 {
+    position: relative;
+    background: #f1f1f1f1;
+  }
+
+
+  .mySlides {
+    display: none;
+    padding: 80px;
+    text-align: center;
+  }
+
+
+  .prev1, .next1 {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -30px;
+    padding: 16px;
+    color: #888;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+
+
+  .next1 {
+    position: absolute;
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+
+
+  .prev1:hover, .next1:hover {
+    background-color: rgba(0,0,0,0.8);
+    color: white;
+  }
+
+  .dot-container {
+      text-align: center;
+      padding: 20px;
+      background: #ddd;
+  }
+
+
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+
+
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+
+
+  q {font-style: italic;}
+
+
+  .author {color: cornflowerblue;}
+
+  .row1{
+    display: flex;
+    flex-direction: row;
+  }
+  .rw1{
+    width: 100%;
+  }
+  .rw1 img{
+    margin-left: 130px;
+  }
+  .rw2{
+    text-align: justify;
+    margin-right: 20px;
+  }
+  .mot{
+    background-color: #c6d7ed;
+    padding: 30px;
+    height: 300px;
+  }
+  .mot p{
+      text-align: justify;
+      font-weight: bold;
+      color: #504f4f;
+  }
+
+  .team-container{
+    display: flex;
+    flex-direction: row;
+  }
+  .team-item {
+    scroll-snap-align: start; 
+    margin: 10px;
+    padding: 10px;
+    background-color: #f5f5f5;
+    border-radius: 5px;
+    width: 250px;
+    height: 250px; 
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    }
+
+  .team-item img {
+    width: 50%;
+    height: 110px; 
+    border-radius: 50%;
+    object-fit: cover; 
+    margin-bottom: 30px;
+    margin-right: 10px;
+  }
+  
+  .team-item .contact-info {
+    text-align: center;
+  }
+  
+  .team-item .contact-info h3 {
+    margin: 0;
+    font-size: 18px;
+  }
+  
+  .team-item .contact-info p {
+    font-weight: bold;
+    margin-top: 5px;
+  }

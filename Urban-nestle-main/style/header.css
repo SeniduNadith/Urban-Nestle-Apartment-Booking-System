@@ -1,0 +1,287 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.nav{
+    display:flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    background-color: #333;
+    padding: 20px 0px 20px 0px;
+}   
+.nav input[type=search]{
+  width: 200px;
+  height: 30px;
+  margin-top: 20px;
+  border-radius: 10px;
+}
+  
+    
+
+.nav a{
+    text-decoration: none;
+    color: #fff;
+
+}
+.nav ul,li{
+    text-decoration: none;
+    list-style: none;
+    color: #fff;
+    padding: 10px;
+    font-family: "Poppins", sans-serif;
+    padding-top: 20px;
+    margin-top: 5px;
+}
+.nav li:hover{
+    color: red;
+}
+
+.img-con{
+  position: relative;
+  right: 18%;
+  top: 10px;
+  transition: transform 0.5s ease;
+}
+.img-con:hover{
+  transform: scale(1.05);
+}
+.img-con img {
+  height: 50px; /* Adjusts the height to fit the nav bar */
+  width: auto;  /* Maintains the aspect ratio of the image */
+  vertical-align: middle;
+   /* Centers the image vertically with the nav items */
+}
+
+.nav button{
+    margin: 10px;
+    margin-top: 15px;
+}
+
+.fa-solid {
+  width: 200px;
+  height: 30px;
+  margin-top: 20px;
+  border-radius: 10px;
+  display: inline-flex; /* Changed to flex for better centering */
+  align-items: center; /* Vertically centers the icon */
+  justify-content: center; /* Horizontally centers the icon */
+}
+
+.flex{
+    
+    display: flex;
+    flex-direction: row;
+}
+.flex1,.flex2{
+    border: 1px solid;
+    margin: 10px;
+    justify-content: center;
+}
+
+#h1{
+    text-align: center;
+    padding: 20px;
+    font-size: 100px;
+}
+/* Style the slider container */
+
+
+.slider {
+  width: 100%;
+  overflow: hidden;
+  border-radius: 0px 0px 180px 180px;
+}
+
+.slide {
+  display: none;
+  animation: fade 0.5s ease-in-out;
+}
+
+.slide img {
+  width: 100%;
+  max-height: 400px;
+}
+
+
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+
+  /* Style the product slider container */
+.product-slider-container {
+    display: flex;
+    
+    scroll-snap-type: x mandatory; /* Enable snapping to slides */
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Style the individual product slides */
+  .product-slider-container {
+    display: flex;
+    overflow-x: auto; /* Enable horizontal scrolling */
+    scroll-snap-type: x mandatory; /* Enable snapping to slides */
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    
+  }
+  
+  .product-slider-container::-webkit-scrollbar {
+    display: none;
+}
+
+  #view{
+    background-color: #fff;
+    transform: translateY(30%);
+  }
+  .product-slide {
+    flex: 0 0 auto;
+    scroll-snap-align: start; /* Align slides to the left edge */
+    margin-right: 10px; /* Adjust spacing between slides */
+    padding: 10px;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    width: 250px; /* Adjust width as needed */
+    text-align: center;
+
+  }
+  .product-slide:hover{
+    background-color: #e2e2e2;
+  }
+  
+  .product-slide img {
+    width: 100%;
+    height: 200px; /* Adjust height as needed */
+    object-fit: cover; /* Crop images to fit */
+  }
+  
+  .product-slide h3 {
+    margin: 10px 0;
+    font-size: 18px;
+  }
+  
+  .product-slide p {
+    font-weight: bold;
+  }
+  
+  .product-slide button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 140%;
+    transform: translateY(-50%);
+    width: auto;
+    padding: 16px;
+    color: black;
+    
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    z-index: 1;
+  }
+  
+  .prev {
+    left: 8%;
+  }
+  
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.2);
+  }
+  
+  .next {
+    right: 8%;
+  }
+  
+  #sp{
+    color: #77767c;
+    font-size: 30px;
+    margin-left: 120px;
+    
+  
+  }
+  .slide.active {
+    display: block;
+  }
+
+  .btn {
+    display: inline-block;
+    font-weight: 400;
+    color: #212529; /* Dark text for visibility */
+    text-align: center;
+    vertical-align: middle;
+    user-select: none;
+    background-color: transparent;
+    border: 1px solid transparent;
+    padding: 6px 12px; /* Padding in pixels */
+    font-size: 16px; /* Font size in pixels */
+    line-height: 24px; /* Line height in pixels */
+    border-radius: 4px; /* Rounded corners */
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    cursor: pointer;
+}
+
+.btn-warning {
+    background-color: #ffc107; /* Bootstrap warning color */
+    border-color: #ffc107; /* Border color matches background */
+}
+
+.btn-warning:hover {
+    background-color: #e0a800; /* Darker shade when hovered */
+    border-color: #daa520; /* Darker border on hover */
+}
+
+.btn-warning:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(255, 193, 7, 0.5); /* Focus shadow in Bootstrap style */
+}
+
+.btn-secondary {
+  color: #fff; /* White text */
+  background-color: #6c757d; /* Gray background */
+  border-color: #6c757d; /* Gray border */
+}
+
+.btn-secondary:hover {
+  background-color: #5a6268; /* Slightly darker gray on hover */
+  border-color: #545b62; /* Border color to match hover background */
+}
+
+.btn-secondary:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(108, 117, 125, 0.5); /* Focus shadow that matches the secondary color */
+}
+
+
+.search-results {
+  display: none; /* Initially hidden */
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 100px;
+  background: white;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  z-index: 2; /* Higher than the search container to overlay */
+  width: 80%;
+  margin: 0 auto;
+}
+
+
+

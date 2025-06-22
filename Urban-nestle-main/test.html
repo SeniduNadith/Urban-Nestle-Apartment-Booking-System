@@ -1,0 +1,25 @@
+<html>
+    <body>
+        <button id="myButton" onclick="changeStyle()">Click Me!</button>
+
+<script>
+function changeStyle() {
+    var btn = document.getElementById('myButton');
+    btn.style.color = 'red';  // Changes text color to red
+    btn.style.backgroundColor = 'black';  // Changes background to black
+}
+</script>
+    </body>
+</html>
+
+<script>
+    var pass =    document.getElementById("password");
+    var repass =    document.getElementById("repassword");
+    var show = document.getElementById("show");
+
+    if(pass.value != repass.value){
+        show.style.color = "red";
+        show.innerHTML = "Passwords do not match";
+    }
+ 
+</script>
